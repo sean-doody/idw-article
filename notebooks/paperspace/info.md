@@ -1,0 +1,2 @@
+- Base Docker image is Paperspace's `paperspace/gradient-base:pt112-tf29-jax0317-py39-20230125`.
+- Then, run `pip install -U pip` followed by `pip install -r requirements.txt`.

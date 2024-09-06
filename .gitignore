@@ -1,0 +1,14 @@
+.DS_Store
+/credentials
+/manuscript
+/data
+/streamlit/data
+/pushshift_working
+/logs
+/models
+/paperspace/training/embeddings
+/paperspace/training/models
+/training/training_data
+/doccano/datasets
+/doccano/exports
+__pycache__

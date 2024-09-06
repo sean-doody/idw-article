@@ -1,0 +1,32 @@
+name: idw-article
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - altair
+  - bertopic
+  - bs4
+  - hyperopt
+  - ipywidgets
+  - jupyterlab
+  - markdown
+  - matplotlib
+  - nltk
+  - numpy
+  - openai
+  - openpyxl
+  - pandas
+  - pip
+  - python=3.9
+  - seaborn
+  - spacy
+  - streamlit
+  - tqdm
+  - umap-learn
+  - vega_datasets
+  - vegafusion
+  - vl-convert-python
+  - pytorch::pytorch
+  - torchaudio
+  - torchvision
+  - conda-forge::sentence-transformers
