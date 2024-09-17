@@ -13,9 +13,13 @@ conda env create -n idw-article --file environment.yml
 ## To build the datasets:
 
 1. First, run `combine_folder_multiprocess.py` to extract the relevant Pushshift Reddit data (note: you must modify the shell scripts in the `reddit-scripts` folder to match your file system). This script was written by [Watchful1](https://github.com/Watchful1/PushshiftDumps).
-2. Then, run `build_sqlite_database.py` to extract the Pushshift data form the ZST files and store them in a SQLite database. Two tables will be created: `comments` and `posts`.
+2. Then, run `build_sqlite_database.py` to extract the Pushshift data from the ZST files and store them in a SQLite database. Two tables will be created: `comments` and `posts`.
 3. Finally, run `build_training_corpus.py` to process the text and prepare the training corpus for topic modeling.
 
 ## To train the topic model:
 
 Consult the Jupyter Notebooks in the `notebooks` subfolder. They are labeled sequentially. **NOTE:** the topic model was trained on [Paperspace Gradient](https://www.paperspace.com/gradient/notebooks) CUDA notebook instances.
+
+## A note on UMAP reproducibility on different operating systems:
+
+Using `random_state` in UMAP will produce the same results on the _same machine_, but the results will typically not be identical on _different_ machines and/or operating systems. See the [discussion here](https://github.com/lmcinnes/umap/issues/153).
